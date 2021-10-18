@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    />
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>GTA Cooking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"> GTA Cooking</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link"> Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link"> F.A.Q.</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link"> Instructors</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link"> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Learn to prepare meals from the<span class="text-danger"> Best Chefs</span> in Toronto.</h1>
+            <p class="lead my-4">
+              Whether you're a beginner or an expert, GTA Cooking has a number of different classes available for all.
+            </p>
+            <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Today</button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="images/img1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-danger text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign up for our newsletter!</h3>
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-secondary btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                  Virtual classes available with lessons given over Zoom. Students are able to choose lessons that fit their scheudle.
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  Students will always have the option to participate in either virtual classes or in person classes. The choice is up to you!
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text">
+                 Classes are available at either one of our 3 locations in Toronto. Various classes run everyday between 9-9. 
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/img2.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>A wide variety of Recipes</h2>
+            <p class="lead">
+              No matter what kind of diet you are on, GTA Cooking has recipes to suit the needs of all.
+            </p>
+            <p>
+              Our Chefs have many years of cooking experience which has allowed them to refine their skills in preparing multiple types of meals. Here's a look at some of the things you'll be preparing.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- FAQ Accordion -->
+    <section id="questions" class="bg-danger text-light p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush text-dark" id="questions">
+          <!-- Item 1-->
+          <div class="accordion-item">
+            <h2 class="accordion-header"></h2>
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where are your 3 locations?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Our locations are in Etobicoke, Downtown Toronto, and Scarborough.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"></h2>
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                Do you need previous cooking experience?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No! We have many lessons available for those who are new to cooking.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"></h2>
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                We are a subscription based service, students will be billed $35 monthly regardless of the amount of lessons taken.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"></h2>
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+               Click the link at the top of the page and enter your information. A team member will get back to you ASAP.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Boxes -->
+    <section id="instructors" class="p-5 bg-light">
+        <div class="container">
+     <h2 class="text-center text-dark">Our Instructors</h2>
+     <p class="lead text-center text-dark mb-5">Our instructors all have 10+ years experience working as a professional chef in the industry.</p>
+     <div class="row g-4">
+         <div class="col-md-6 col-lg-3">
+             <div class="card bg-secondary text-light">
+                 <div class="card-body text-center">
+                     <img src="https://randomuser.me/api/portraits/men/54.jpg" class="rounded-circle mb-3" alt="">
+                     <h3 class="card-title mb-3">John Doe</h3>
+                     <p class="card-text">5 Star Hotel Head Chef</p>
+                     <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                     <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                     <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                     <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                 </div>
+             </div>
+         </div>
+
+         <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                    <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                    <h3 class="card-title mb-3">Jane Doe</h3>
+                    <p class="card-text">Michelin Star Restaurant Chef</p>
+                    <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                    <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                    <h3 class="card-title mb-3">Steve Smith</h3>
+                    <p class="card-text">Personal Chef, Catering Chef</p>
+                    <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                    <h3 class="card-title mb-3">Sara Smith</h3>
+                    <p class="card-text">Restaurant Owner, Head Chef</p>
+                    <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="p-5 bg-danger text-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 350 Victoria Street, Toronto, ON
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Telephone:</span> 416-967-1111
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> GTACooking@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Fax:</span> 1-416-555-5555
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                   <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-light text-dark text-center position-relative">
+<div class="container">
+    <p class="lead">Copyright &copy; 2021 GTA Cooking</p>
+    <a href="" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+</div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enroll" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enroll">Personal Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+              <div class="mb-3">
+                  <label for="first-name" class="col-form-label">
+                      First Name:
+                  </label>
+                  <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    Last Name:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    Email:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoieWVldHllZXQxMjM0NSIsImEiOiJja3V2czRmaWk2YnllMnFxanM0NTBheTBmIn0.dgw45e0vQ7t04hJ5tvgM2w';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-79.3788017, 43.65817079452975],
+zoom: 18,
+});
+    </script>
+  </body>
+</html>
